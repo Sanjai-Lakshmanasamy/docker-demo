@@ -28,8 +28,11 @@ while test $# -gt 0; do
 done
 
 mkdir demo_$VERSION
+cp deploy.sh demo_$VERSION/
+cp docker-compose.yaml demo_$VERSION/
+cp Dockerfile demo_$VERSION/
+cp index.html demo_$VERSION/
+cd demo_$VERSION/
 ls
-pwd
-cp {deploy.sh,docker-compose.yaml,Dockerfile,index.html} demo_$VERSION/
-
+cd ../
 tar -zcf demo_$VERSION.tar.gz demo_$VERSION

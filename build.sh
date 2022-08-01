@@ -29,6 +29,6 @@ done
 
 mkdir demo_$VERSION
 
-cp {deploy.sh, docker-compose.yaml, Dockerfile, index.html} demo_$VERSION/
+cp {deploy.sh,docker-compose.yaml,Dockerfile,index.html} demo_$VERSION/
 
 tar -zcf demo_$VERSION.tar.gz demo_$VERSION

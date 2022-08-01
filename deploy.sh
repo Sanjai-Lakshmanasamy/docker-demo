@@ -6,7 +6,7 @@ echo "  CLEANED DOCKER"
 echo "========================================================================="
 
 ls
-docker build --tag demo:$1 -f Dockerfile
+docker build -t demo:1.0.2 -f Dockerfile
 echo "========================================================================="
 echo "  DOCKER IMAGE BUILD COMPLETED"
 echo "========================================================================="

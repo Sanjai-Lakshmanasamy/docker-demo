@@ -1,4 +1,4 @@
-set -e
+#set -e
 docker stop $(docker ps -a -q) || true
 docker rm $(docker ps -a -q) || true
 echo "========================================================================="

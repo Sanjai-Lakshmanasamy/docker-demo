@@ -2,7 +2,7 @@ version: '3.9'
 
 services: 
  nginx:
-   image: demo:{version}
+   image: demo:v1
    container_name: nginx-demo
    restart: always
    ports:
